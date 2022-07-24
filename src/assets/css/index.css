@@ -1,389 +1,386 @@
-@import "base.css";
+@import 'base.css';
 
 section {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* Who Am I */
 
-
 .whoami {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .whoami h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 72px;
-    color: #333333;
-    font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 72px;
+  color: #333333;
+  font-weight: bold;
 }
 
 body.dark-theme .whoami h2 {
-    color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .whoami p {
-    margin-top: 40px;
-    margin-bottom: 0;
-    color: #6B7280;
-    font-weight: normal;
+  margin-top: 40px;
+  margin-bottom: 0;
+  color: #6b7280;
+  font-weight: normal;
 }
 
 body.dark-theme .whoami p {
-    color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .whoami hr {
-    width: 650px;
-    height: 0;
-    color: #333333;
-    border: none;
-    border-top: 2px solid;
-    margin-top: 40px;
+  width: 650px;
+  height: 0;
+  color: #333333;
+  border: none;
+  border-top: 2px solid;
+  margin-top: 40px;
 }
 
 body.dark-theme .whoami hr {
-    color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .whoami .iam {
-    border-radius: 2%;
+  border-radius: 2%;
 }
 
 .iam.mobile {
-    display: none;
+  display: none;
 }
 
 /* About */
 
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .about h2 {
-    color: #333333;
-    font-size: 48px;
+  color: #333333;
+  font-size: 48px;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body.dark-theme .about h2 {
-    color: #f2f2f2;
+  color: #f2f2f2;
 }
 
 .about_div {
-    background-size: cover;
+  background-size: cover;
 
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .about_div.school {
-    background: url('../../assets/img/school.png') fixed center;
+  background: url('../../assets/img/school.png') fixed center;
 }
 
 .about_div.learn {
-    background: url('../../assets/img/electronic.png') fixed center;
+  background: url('../../assets/img/electronic.png') fixed center;
 }
 
 .about_div.yandex {
-    background: url('../../assets/img/lyceum.png') fixed center;
+  background: url('../../assets/img/lyceum.png') fixed center;
 }
 
 body.dark-theme .about_div {
-    background: transparent;
+  background: transparent;
 }
 
 .about p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
-    color: #000;
-    background: #fff;
-    mix-blend-mode: lighten;
-    width: 1020px;
-    font-size: 90px;
-    font-weight: 900;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: lighten;
+  width: 1020px;
+  font-size: 90px;
+  font-weight: 900;
 }
 
 body.dark-theme .about p {
-    color: #f2f2f2;
-    background: transparent;
-    mix-blend-mode: normal;
+  color: #f2f2f2;
+  background: transparent;
+  mix-blend-mode: normal;
 }
 
 .toggle_about {
-    height: 35px;
-    width: 414px;
+  height: 35px;
+  width: 414px;
 
-    margin-top: 50px;
+  margin-top: 50px;
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .toggle_about_item {
-    width: 83px;
-    height: 10px;
+  width: 83px;
+  height: 10px;
 
-    border-radius: 100px;
-    transition: .2s;
+  border-radius: 100px;
+  transition: 0.2s;
 }
 
 .toggle_about_item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 body.dark-theme .toggle_about_item:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .toggle_about_item {
-    background-color: #CFC8BE;
+  background-color: #cfc8be;
 }
 
 .toggle_about_item.active {
-    background-color: #131313;
+  background-color: #131313;
 }
-
 
 /* Projects */
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .projects hgroup h2 {
-    color: #333333;
-    font-size: 48px;
+  color: #333333;
+  font-size: 48px;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body.dark-theme .projects hgroup h2 {
-    color: #E0E0E0;
-
+  color: #e0e0e0;
 }
 
 .projects hgroup h3 {
-    color: #6B7280;
-    width: 760px;
-    font-size: 18px;
-    font-weight: normal;
+  color: #6b7280;
+  width: 760px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 body.dark-theme .projects hgroup h3 {
-    color: #E0E0E0;
-
+  color: #e0e0e0;
 }
 
 .projects_container {
-    width: 1000px;
+  width: 1000px;
 
-    margin-top: 60px;
+  margin-top: 60px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 40px 40px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "isabsent isabsent"
-    "randomall valentin"
-    "shrty valentin";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px 40px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'isabsent isabsent'
+    'randomall valentin'
+    'shrty valentin';
 }
 
 .project {
-    border-radius: 10px;
+  border-radius: 10px;
 
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 
-    background-color: #333333;
+  background-color: #333333;
 
-    text-align: left;
+  text-align: left;
 
-    padding: 30px 15px;
+  padding: 30px 15px;
 }
 
 .project h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 50px;
-    color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ffffff;
 }
 
 .project p {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #F2F2F2;
-    font-weight: normal;
-    width: 70%;
-    font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #f2f2f2;
+  font-weight: normal;
+  width: 70%;
+  font-size: 20px;
 }
 
 .valentin {
-    grid-area: valentin;
+  grid-area: valentin;
 
-    background: linear-gradient(117.48deg, #EB5757 -12.38%, #E33232 50.62%, #CA1D1D 111.06%);
+  background: linear-gradient(
+    117.48deg,
+    #eb5757 -12.38%,
+    #e33232 50.62%,
+    #ca1d1d 111.06%
+  );
 }
 
 .shrty {
-    grid-area: shrty;
+  grid-area: shrty;
 
-    background: url("../../assets/img/shrty_bg.png");
+  background: url('../../assets/img/shrty_bg.png');
 }
 
 .randomall {
+  grid-area: randomall;
 
-    grid-area: randomall;
-
-    background: url("../../assets/img/randomall_bg.png");
+  background: url('../../assets/img/randomall_bg.png');
 }
 
 .isabsent {
-    height: 270px;
+  height: 270px;
 
-    grid-area: isabsent;
+  grid-area: isabsent;
 
-    background: url("../../assets/img/isabsent_bg.png");
+  background: url('../../assets/img/isabsent_bg.png');
 }
 
 .projects .blurry-text {
-    color: transparent;
-    transition: .2s;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  color: transparent;
+  transition: 0.2s;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
 }
 
 .project:hover .blurry-text {
-    color: #F2F2F2;
-    text-shadow: 0 0 0;
+  color: #f2f2f2;
+  text-shadow: 0 0 0;
 }
-
 
 /* Achievements */
 
 .achievements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .achievements hgroup h2 {
-    color: #333333;
-    font-size: 48px;
+  color: #333333;
+  font-size: 48px;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-
 .achievements hgroup h3 {
-    color: #6B7280;
-    width: 760px;
-    font-size: 18px;
-    font-weight: normal;
+  color: #6b7280;
+  width: 760px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 body.dark-theme .achievements hgroup h2 {
-    color: white;
+  color: white;
 }
 
 body.dark-theme .achievements hgroup h3 {
-    color: white;
+  color: white;
 }
 
 .achievements_list {
-    list-style: none;
-    width: 1122px;
-    font-size: 28px;
-    font-weight: normal;
-    text-align: justify;
-    font-style: normal;
+  list-style: none;
+  width: 1122px;
+  font-size: 28px;
+  font-weight: normal;
+  text-align: justify;
+  font-style: normal;
 }
 
 .achievements_list li {
-    color: black;
-    margin-top: 50px;
+  color: black;
+  margin-top: 50px;
 }
 
 body.dark-theme .achievements_list li {
-    color: white;
+  color: white;
 }
 
 /* Some photos */
 
 .photos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .photos hgroup h2 {
-    color: #333333;
-    font-size: 48px;
+  color: #333333;
+  font-size: 48px;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body.dark-theme .photos hgroup h2 {
-    color: white;
+  color: white;
 }
 
 .photos_container {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .photo {
-    border-radius: 10px;
-    width: 385px;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
+  border-radius: 10px;
+  width: 385px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo.robocup {
-    background: url('../../assets/img/RoboCup.png') no-repeat black center;
+  background: url('../../assets/img/RoboCup.png') no-repeat black center;
 }
 
 .photo.worldskills {
-    background: url('../../assets/img/WorldSkills.png') no-repeat black center;
+  background: url('../../assets/img/WorldSkills.png') no-repeat black center;
 }
 
 .photo.pom {
-    background: url('../../assets/img/practice_on_mockups.png') no-repeat black center;
+  background: url('../../assets/img/practice_on_mockups.png') no-repeat black
+    center;
 }
 
 .photo p {
-    margin-top: auto;
-    font-size: 17px;
-    color: white;
-    font-weight: 600;
+  margin-top: auto;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
 }
-

@@ -18,24 +18,24 @@ toggle_item_third.addEventListener('click', () => {
 
 function switch_about(number) {
     let obj
-    if (number === 1){
+    if (number === 1) {
         obj = toggle_item_first
     }
-    if (number === 2){
+    if (number === 2) {
         obj = toggle_item_second
     }
-    if (number === 3){
+    if (number === 3) {
         obj = toggle_item_third
     }
     if (!('active' in obj.classList)) {
         obj.className += ' active'
-        if (number !== 1){
+        if (number !== 1) {
             toggle_item_first.classList.remove('active')
         }
-        if (number !== 2){
+        if (number !== 2) {
             toggle_item_second.classList.remove('active')
         }
-        if (number !== 3){
+        if (number !== 3) {
             toggle_item_third.classList.remove('active')
         }
     }
