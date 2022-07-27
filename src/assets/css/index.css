@@ -95,7 +95,8 @@ body.dark-theme .about h2 {
 }
 
 .about_div.foss {
-  background: url('../../assets/img/lyceum.png') fixed center;
+  /* background: url('../../assets/img/lyceum.png') fixed center; */
+  background: black;
 }
 
 body.dark-theme .about_div {
