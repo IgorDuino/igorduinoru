@@ -81,17 +81,17 @@ body.dark-theme .about h2 {
 }
 
 .about_div {
-  background-size: cover;
-
   margin-top: 50px;
 }
 
 .about_div.school {
   background: url('../../assets/img/school.png') fixed center;
+  background-size: cover;
 }
 
 .about_div.learn {
   background: url('../../assets/img/electronic.png') fixed center;
+  background-size: cover;
 }
 
 .about_div.foss {
@@ -364,19 +364,21 @@ body.dark-theme .photos hgroup h2 {
   height: 240px;
   display: flex;
   flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .photo.robocup {
-  background: url('../../assets/img/RoboCup.png') no-repeat black center;
+  background-image: url('../../assets/img/RoboCup.png');
 }
 
 .photo.worldskills {
-  background: url('../../assets/img/WorldSkills.png') no-repeat black center;
+  background-image: url('../../assets/img/WorldSkills.png');
 }
 
 .photo.pom {
-  background: url('../../assets/img/practice_on_mockups.png') no-repeat black
-    center;
+  background-image: url('../../assets/img/practice_on_mockups.png');
 }
 
 .photo p {
