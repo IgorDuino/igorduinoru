@@ -6,6 +6,11 @@ section {
   flex-direction: column;
 }
 
+.noscript {
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
 /* Who Am I */
 
 .whoami {
@@ -90,7 +95,7 @@ body.dark-theme .about h2 {
 }
 
 .about_div.learn {
-  background: url('../../assets/img/electronic.png') fixed center;
+  background: url('../../assets/img/matrix.jpeg') fixed center;
   background-size: cover;
 }
 
@@ -199,9 +204,9 @@ body.dark-theme .projects hgroup h3 {
   gap: 40px 40px;
   grid-auto-flow: row;
   grid-template-areas:
-    'isabsent isabsent'
-    'randomall valentin'
-    'shrty valentin';
+    'webeye webeye'
+    'isabsent wgbot'
+    'valentine wgbot';
 }
 
 .project {
@@ -216,6 +221,8 @@ body.dark-theme .projects hgroup h3 {
   text-align: left;
 
   padding: 30px 15px;
+
+  display: block;
 }
 
 .project h4 {
@@ -235,8 +242,14 @@ body.dark-theme .projects hgroup h3 {
   font-size: 20px;
 }
 
-.valentin {
-  grid-area: valentin;
+.valentine {
+  grid-area: valentine;
+
+  background: url('../../assets/img/turquoise_bg.png');
+}
+
+.wgbot {
+  grid-area: wgbot;
 
   background: linear-gradient(
     117.48deg,
@@ -246,24 +259,18 @@ body.dark-theme .projects hgroup h3 {
   );
 }
 
-.shrty {
-  grid-area: shrty;
-
-  background: url('../../assets/img/shrty_bg.png');
-}
-
-.randomall {
-  grid-area: randomall;
-
-  background: url('../../assets/img/randomall_bg.png');
-}
-
 .isabsent {
-  height: 270px;
-
   grid-area: isabsent;
 
-  background: url('../../assets/img/isabsent_bg.png');
+  background: url('../../assets/img/orange_bg.png');
+}
+
+.webeye {
+  height: 270px;
+
+  grid-area: webeye;
+
+  background: url('../../assets/img/blue_bg.png');
 }
 
 .projects .blurry-text {
@@ -323,6 +330,11 @@ body.dark-theme .achievements hgroup h3 {
   margin-top: 50px;
 }
 
+li.achievement a {
+  font-size: 20px;
+  color: gray;
+}
+
 body.dark-theme .achievements_list li {
   color: white;
 }
@@ -364,7 +376,7 @@ body.dark-theme .photos hgroup h2 {
   height: 240px;
   display: flex;
   flex-direction: column;
-
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -381,7 +393,28 @@ body.dark-theme .photos hgroup h2 {
   background-image: url('../../assets/img/practice_on_mockups.png');
 }
 
+.photo.innoopen {
+  background-image: url('../../assets/img/innoopen.jpg');
+}
+.photo.nto {
+  background-image: url('../../assets/img/nto.jpg');
+}
+.photo.ctflyceum {
+  background-image: url('../../assets/img/ctflyceum.jpg');
+}
+
+.photo.drivehack {
+  background-image: url('../../assets/img/drivehack.jpg');
+}
+.photo.itgen {
+  background-image: url('../../assets/img/itgen.jpg');
+}
+.photo.ideathon {
+  background-image: url('../../assets/img/ideathon.jpg');
+}
+
 .photo p {
+  display: none;
   margin-top: auto;
   font-size: 17px;
   color: white;

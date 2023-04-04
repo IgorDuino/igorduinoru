@@ -8,7 +8,7 @@
 
     <meta name="description" content="Личный сайт-портфолио Игоря Кузьменкова. Backend программист" />
     <meta name="keywords"
-        content="Игорь Кузьменков, Igor Kuzmenkov, кузьменков, igorduino, web разработчик, фрилансер, backend developer, kuzmenkov, игорьдуино" />
+        content="Игорь Кузьменков, Igor Kuzmenkov, кузьменков, igorduino, web разработчик, фрилансер, backend developer, kuzmenkov, игорьдуино, Кузьменков" />
 
     <meta name="yandex-verification" content="640cf5ac2e0bc1a6" />
 
@@ -33,12 +33,11 @@
 
     <link rel="stylesheet" href="assets/css/index.css">
 
-    <title id="title">IgorDuino site</title>
+    <title id="title">IgorDuino</title>
 </head>
 
 <body>
-
-    <header>
+    <div class="noscript">
         <noscript>
             <div>
                 switching themes and language is not available due to the inability to execute JavaScript code
@@ -46,8 +45,10 @@
                 переключение тем и языка недоступно из-за невозможности выполнения JavaScript кода
             </div>
         </noscript>
+    </div>
 
 
+    <header>
         <p class='switcher unselectable' id="theme_switcher_btn">dark</p>
         <nav>
             <a href="/" class="active_nav nav_home">Home</a>
@@ -65,7 +66,8 @@
             <div class="left">
                 <h2 class="whoami_full_name">Kuzmenkov<br>Igor</h2>
                 <img class="iam mobile" src="assets/img/i.png" alt="igor">
-                <p class="whoami_short_about">Hello everyone, I am developing a backend for websites and electronics</p>
+                <p class="whoami_short_about">Hello everyone, I am developing a backend for websites and
+                    electronics.<br>Now I am studying Information Security and participate in CTFs</p>
                 <hr>
                 <div class="social">
                     <a href="mailto:igor.kuzmenkov.05@mail.ru">
@@ -94,7 +96,7 @@
             </div>
             <div class="about_div learn">
                 <p class="about_learn">
-                    I am engaged in programming and electronics
+                    I am engaged in programming and InfoSec
                 </p>
             </div>
             <div class="about_div foss">
@@ -106,6 +108,7 @@
                 <div id="toggle_item_first" class="toggle_about_item active school"></div>
                 <div id="toggle_item_second" class="toggle_about_item school"></div>
                 <div id="toggle_item_third" class="toggle_about_item school"></div>
+
             </div>
         </section>
 
@@ -114,29 +117,29 @@
                 <h2 class="projects_title">My recent projects</h2>
             </hgroup>
             <div class="projects_container">
-                <div class="isabsent project">
+                <a class="webeye project" href="https://github.com/CupSoft/webeye/">
+                    <h4 class="projects_webeye_title">WebEye</h4>
+                    <p class="projects_webeye_description blurry-text">Distributed monitoring system for websites and
+                        web resources</p>
+                </a>
+
+                <a class="isabsent project" href="https://github.com/IgorDuino/isabsent_api">
                     <h4 class="projects_isabsent_title">IsAbsent</h4>
-                    <p class="projects_isabsent_description blurry-text">the system of monitoring and marking absence
-                        for
-                        educational institutions</p>
-                </div>
+                    <p class="projects_isabsent_description blurry-text">The system of monitoring and marking absence
+                        for educational institutions</p>
+                </a>
 
-                <div class="randomall project">
-                    <h4 class="projects_randomall_title">RandomAll</h4>
-                    <p class="projects_randomall_description blurry-text">a simple service for obtaining various random
-                        values</p>
-                </div>
-
-                <div class="valentin project">
-                    <h4 class="projects_valentinbot_title">ValentinBot</h4>
-                    <p class="projects_valentinbot_description blurry-text">telegram bot for exchanging valentine's
+                <a class="valentine project" href="https://github.com/IgorDuino/valentine_bot">
+                    <h4 class="projects_valentinebot_title">Valentine bot</h4>
+                    <p class="projects_valentinebot_description blurry-text">Telegram bot for exchanging valentinee's
                         cards</p>
-                </div>
+                </a>
 
-                <div class="shrty project">
-                    <h4 class="projects_shrty_title">Shrty</h4>
-                    <p class="projects_shrty_description blurry-text">service for getting a unique shortened link</p>
-                </div>
+                <a class="wgbot project"
+                    onclick="alert('По требованию заказчика проект сейчас закрыт для публичного доступа')">
+                    <h4 class="projects_wgbot_title">WireGuard telegram bot</h4>
+                    <p class="projects_wgbot_description blurry-text">Telegram bot for automatic selling vpn</p>
+                </a>
             </div>
         </section>
 
@@ -146,31 +149,39 @@
                 <h3 class="achievements_description">Some of my results of participation in competitions</h3>
             </hgroup>
             <ul class="achievements_list">
-                <li class="achievement_1">1st place - 2020 - at the WorldSkills Russia Moscow championship electronics
-                    competencies 12-14
+                <li class="achievement achievement_1">
+                    1st place - 2020 - at the WorldSkills Russia Moscow championship electronics competencies 12-14
                 </li>
-                <li class="achievement_2">2nd place - 2019 - at the WorldSkills Russia Moscow championship electronics
-                    competencies 12-14
+                <li class="achievement achievement_2">
+                    2nd place - 2019 - at the WorldSkills Russia Moscow championship electronics competencies 12-14
                 </li>
-                <li class="achievement_3">3nd place - 2021 - at the WorldSkills Russia Moscow championship electronics
-                    competencies 14-16
+                <li class="achievement achievement_3">
+                    3nd place - 2021 - at the WorldSkills Russia Moscow championship electronics competencies 14-16
                 </li>
-                <li class="achievement_4">4th place - 2021 at the RoboCup Robotics Championship in Tomsk in the
-                    competence
-                    of robofootball Open Soccer
+                <li class="achievement achievement_4">
+                    4th place - 2021 at the RoboCup Robotics Championship in Tomsk in the competence of robofootball
+                    Open Soccer
                 </li>
-                <li class="achievement_5">Master category - 2019 in the radio electronics competition "practice on
-                    mockups"
-                    in Moscow
+                <li class="achievement achievement_5">
+                    First category - 2019 in the radio electronics competition "practice on mockups" in Moscow <a
+                        href="https://mephi.ru/content/news/1810/130617">🔗</a>
                 </li>
-                <li class="achievement_6">2nd place - 2019 at the exhibition of technical projects Archimede with the
+                <li class="achievement achievement_6">
+                    2nd place - 2019 at the exhibition of technical projects Archimede with the
                     project "Robot dog Gosha"
                 </li>
-                <li class="achievement_7">Participant of the DriveHack hackathon
-                    (award from the creators of the case "Transport Innovations of Moscow")
+                <li class="achievement achievement_7">
+                    Participant of the DriveHack hackathon (award from the creators of the case "Transport Innovations
+                    of Moscow")
                 </li>
-                <li class="achievement_8">
-                    Participant of the Moscow Hackathon 2022 KS54
+                <li class="achievement achievement_8">
+                    Participant of the Moscow Hackathon "IT generation" 2022 KS54
+                </li>
+                <li class="achievement achievement_9">
+                    Finalist of the NTO Olympiad on Information Security
+                </li>
+                <li class="achievement achievement_10">
+                    Finalist of the InnoOpen Olympiad on Information security
                 </li>
             </ul>
         </section>
@@ -180,6 +191,17 @@
                 <h2 class="photos_title">Some photos</h2>
             </hgroup>
             <div class="photos_container">
+                <div class="photo innoopen">
+                    <p class="photo_innoopen_text">InnoOpen, Innopolis</p>
+                </div>
+                <div class="photo nto">
+                    <p class="photo_nto_text">NTO, MIPHI</p>
+                </div>
+                <div class="photo ctflyceum">
+                    <p class="photo_ctflyceum_text">CTF, HSE lyceum</p>
+                </div>
+            </div>
+            <div class="photos_container">
                 <div class="photo robocup">
                     <p class="photo_robocup_text">RoboCup, Tomsk</p>
                 </div>
@@ -188,6 +210,17 @@
                 </div>
                 <div class="photo pom">
                     <p class="photo_pom_text">POM, Moscow</p>
+                </div>
+            </div>
+            <div class="photos_container">
+                <div class="photo drivehack">
+                    <p class="photo_drivehack_text">DriveHack, Cyberschool</p>
+                </div>
+                <div class="photo itgen">
+                    <p class="photo_itgen_text">ITGen hackathon, KS54</p>
+                </div>
+                <div class="photo ideathon">
+                    <p class="photo_ideathon_text">Ideathon, HSE</p>
                 </div>
             </div>
         </section>
