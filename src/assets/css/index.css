@@ -58,6 +58,8 @@ body.dark-theme .whoami hr {
 
 .whoami .iam {
   border-radius: 2%;
+  width: 450px;
+  height: 450px;
 }
 
 .iam.mobile {
@@ -419,4 +421,156 @@ body.dark-theme .photos hgroup h2 {
   font-size: 17px;
   color: white;
   font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 70%;
+  }
+
+  header {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .whoami hr{
+    width: 100%;
+  }
+
+  .whoami .iam {    
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .whoami .left{
+    width: 50%;
+  }
+
+  .whoami h2{
+    font-size: 40px;
+  }
+
+  .social{
+    width: 100%;
+    max-width: 320px;
+    margin-top: 20px;
+  }
+
+  .about p{
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .toggle_about{
+    width: 80%;
+    max-width: 414px;
+  }
+
+  .achievements_list {
+    padding: 0;
+    font-size: 20px;
+    margin: 0;
+    width: 90%;
+  }
+
+  .photos_container {
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 80%;
+    max-width: 420px;
+    margin-bottom: 30px;
+  }
+
+  .photo p {
+    display: block;
+  }
+
+  .achievements hgroup h3 {
+    width: unset;
+  }
+
+  .projects_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project {
+    width: 70%;
+    background-size: cover;
+  }
+
+  .projects .blurry-text{
+    text-shadow: 0 0 0;
+    color: #f2f2f2;
+  }
+
+  .webeye, .isabsent, .wgbot, .valentine {
+    height: 200px;
+  }
+
+  .project h4 {
+    font-size: 30px;
+  }
+
+  .about {
+    width: 100%;
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  header {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #theme_switcher_btn, #lang_switcher_btn{
+    display: none;
+  } 
+  html{
+    background-color: white;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .about_div{
+    width: 80%;
+  }
+
+  .whoami .left{
+    width: 70%;
+  }
+  section{
+    margin-top: 30px;
+  }
+  
+  .whoami{
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whoami .iam{
+    display: none;
+  }
 }
