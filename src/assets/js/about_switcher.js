@@ -2,7 +2,7 @@ const toggle_item_first = document.querySelector("#toggle_item_first")
 const toggle_item_second = document.querySelector("#toggle_item_second")
 const toggle_item_third = document.querySelector("#toggle_item_third")
 
-const school_about = document.querySelector('.about_div.school')
+const university_about = document.querySelector('.about_div.university')
 const learn_about = document.querySelector('.about_div.learn')
 const foss_about = document.querySelector('.about_div.foss')
 
@@ -41,7 +41,7 @@ function switch_about(number) {
     }
 
 
-    school_about.style.display = number === 1 ? 'block' : 'none'
+    university_about.style.display = number === 1 ? 'block' : 'none'
     learn_about.style.display = number === 2 ? 'block' : 'none'
     foss_about.style.display = number === 3 ? 'block' : 'none'
 }

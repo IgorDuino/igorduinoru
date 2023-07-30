@@ -1,7 +1,7 @@
 @import 'base.css';
 
 section {
-  margin-top: 150px;
+  margin-top: 160px;
   display: flex;
   flex-direction: column;
 }
@@ -31,9 +31,10 @@ section {
 body.dark-theme .whoami h2 {
   color: #f2f2f2;
 }
-
-.whoami p {
+.whoami_short_about{
   margin-top: 40px;
+}
+.whoami p {
   margin-bottom: 0;
   color: #6b7280;
   font-weight: normal;
@@ -60,6 +61,16 @@ body.dark-theme .whoami hr {
   border-radius: 2%;
   width: 450px;
   height: 450px;
+}
+
+.fa-location-dot{
+  color:#333333;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+body.dark-theme .fa-location-dot {
+  color: #f2f2f2;
 }
 
 .iam.mobile {
@@ -91,8 +102,8 @@ body.dark-theme .about h2 {
   margin-top: 50px;
 }
 
-.about_div.school {
-  background: url('../../assets/img/school.png') fixed center;
+.about_div.university {
+  background: url('../../assets/img/university.jpg') fixed center;
   background-size: cover;
 }
 
@@ -320,7 +331,7 @@ body.dark-theme .achievements hgroup h3 {
 
 .achievements_list {
   list-style: none;
-  width: 1122px;
+  width: 1070px;
   font-size: 28px;
   font-weight: normal;
   text-align: justify;
