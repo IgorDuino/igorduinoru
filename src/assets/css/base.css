@@ -22,6 +22,10 @@ html {
   align-items: center;
 }
 
+html:has(body.dark-theme) {
+  background-color: #333333 !important;
+}
+
 body {
   width: 1200px;
 }
