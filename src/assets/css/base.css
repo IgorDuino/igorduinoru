@@ -23,15 +23,16 @@ html {
 }
 
 html:has(body.dark-theme) {
-  background-color: #333333 !important;
+  background-color: #0c0d11 !important;
 }
 
 body {
   width: 1200px;
+  background-color: white;
 }
 
 body.dark-theme {
-  background-color: #333333;
+  background-color: #0c0d11 !important;
 }
 
 ::-webkit-scrollbar {
@@ -52,7 +53,7 @@ body.dark-theme {
 }
 
 .switcher {
-  color: black;
+  color: #1f1f1f;
 }
 
 body.dark-theme .switcher {

@@ -28,12 +28,12 @@ nav.mobile {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 72px;
-  color: #333333;
+  color: #1f1f1f;
   font-weight: bold;
 }
 
 body.dark-theme .whoami h2 {
-  color: #f2f2f2;
+  color: #f6f5f5;
 }
 .whoami_short_about {
   margin-top: 40px;
@@ -51,7 +51,7 @@ body.dark-theme .whoami p {
 .whoami hr {
   width: 650px;
   height: 0;
-  color: #333333;
+  color: #1f1f1f;
   border: none;
   border-top: 2px solid;
   margin-top: 40px;
@@ -68,7 +68,7 @@ body.dark-theme .whoami hr {
 }
 
 .fa-location-dot {
-  color: #333333;
+  color: #1f1f1f;
   margin-right: 10px;
   margin-top: 10px;
 }
@@ -91,7 +91,7 @@ body.dark-theme .fa-location-dot {
 }
 
 .about h2 {
-  color: #333333;
+  color: #1f1f1f;
   font-size: 48px;
 
   margin-top: 0;
@@ -188,7 +188,7 @@ body.dark-theme .toggle_about_item:hover {
 }
 
 .projects hgroup h2 {
-  color: #333333;
+  color: #1f1f1f;
   font-size: 48px;
 
   margin-top: 0;
@@ -311,7 +311,7 @@ body.dark-theme .projects hgroup h3 {
 }
 
 .achievements hgroup h2 {
-  color: #333333;
+  color: #1f1f1f;
   font-size: 48px;
 
   margin-top: 0;
@@ -366,7 +366,7 @@ body.dark-theme .achievements_list li {
 }
 
 .photos hgroup h2 {
-  color: #333333;
+  color: #1f1f1f;
   font-size: 48px;
 
   margin-top: 0;
