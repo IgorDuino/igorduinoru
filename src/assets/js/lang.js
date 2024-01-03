@@ -1,10 +1,10 @@
 const langBtn = document.querySelector("#lang_switcher_btn");
 
 function switchLang() {
-    const currentLang = localStorage.getItem("lang") === "rus" ? "eng" : "rus";
-    localStorage.setItem("lang", currentLang);
-    langBtn.innerHTML = currentLang;
-    loadLang(currentLang);
+    const nextLang = localStorage.getItem("lang") === "rus" ? "eng" : "rus";
+    localStorage.setItem("lang", nextLang);
+    langBtn.innerHTML = nextLang === "rus" ? "eng" : "rus"; 
+    loadLang(nextLang);
 }
 
 langBtn.addEventListener('click', switchLang);
@@ -29,5 +29,5 @@ function loadLang(code) {
 
 const initialLang = localStorage.getItem("lang") === "rus" ? "rus" : "eng";
 localStorage.setItem("lang", initialLang);
-langBtn.innerHTML = initialLang;
+langBtn.innerHTML = initialLang === "rus" ? "eng" : "rus";
 loadLang(initialLang);
