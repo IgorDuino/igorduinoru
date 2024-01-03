@@ -1,46 +1,33 @@
-const lang_btn = document.querySelector("#lang_switcher_btn");
+const langBtn = document.querySelector("#lang_switcher_btn");
 
-function switch_lang() {
-    if (localStorage.getItem("lang") === "rus") {
-        localStorage.setItem("lang", "eng")
-        lang_btn.innerHTML = 'eng'
-    } else {
-        localStorage.setItem("lang", "rus")
-        lang_btn.innerHTML = 'rus'
-    }
-    load_lang(lang_btn.innerHTML)
+function switchLang() {
+    const currentLang = localStorage.getItem("lang") === "rus" ? "eng" : "rus";
+    localStorage.setItem("lang", currentLang);
+    langBtn.innerHTML = currentLang;
+    loadLang(currentLang);
 }
 
-lang_btn.addEventListener('click', switch_lang)
+langBtn.addEventListener('click', switchLang);
 
-function change_lang(lang) {
-    console.log(lang)
-    for (let key in lang) {
-        try {
-            document.querySelector('.' + key).innerHTML = lang[key]
-        } catch (e) {
-            console.error(e)
+function changeLang(langData) {
+    Object.keys(langData).forEach(key => {
+        const element = document.querySelector(`.${key}`);
+        if (element) {
+            element.innerHTML = langData[key];
+        } else {
+            console.error(`Element with class ${key} not found`);
         }
-    }
+    });
 }
 
-function load_lang(code) {
-    const requestURLEng = `././languages/${code}.json`;
-
-    const request = new XMLHttpRequest();
-    request.open('GET', requestURLEng);
-    request.send();
-
-    request.onload = function () {
-        const res = JSON.parse(request.responseText)
-        change_lang(res)
-    }
+function loadLang(code) {
+    fetch(`././languages/${code}.json`)
+        .then(response => response.json())
+        .then(data => changeLang(data))
+        .catch(error => console.error(error));
 }
 
-if (localStorage.getItem("lang") === "rus") {
-    lang_btn.innerHTML = 'rus'
-} else {
-    localStorage.setItem("lang", "eng")
-    lang_btn.innerHTML = 'eng'
-}
-load_lang(lang_btn.innerHTML)
+const initialLang = localStorage.getItem("lang") === "rus" ? "rus" : "eng";
+localStorage.setItem("lang", initialLang);
+langBtn.innerHTML = initialLang;
+loadLang(initialLang);
