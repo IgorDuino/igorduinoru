@@ -758,4 +758,11 @@ body.dark-theme .photos hgroup h2 {
   .whoami .iam {
     display: none;
   }
+
+  footer{
+    margin-top: 50px;
+  }
+  footer h3 {
+    text-align: center;
+  }
 }
