@@ -10,7 +10,7 @@
   "whoami_second_name": "Кузьменков",
   "whoami_first_name": "Игорь",
   "location": "Иннополис, Россия",
-  "whoami_short_about": "Всем привет, я разрабатываю бэкэнд для IT проектов и электронику.<br>Сейчас я активну изучаю ИБ и участвую в различных CTF",
+  "whoami_short_about": "Всем привет, я пентестер из F.A.C.C.T.<br>Люблю искать уязвимости и писать код",
   "about_title": "Обо мне",
   "about_university": "Сейчас я учусь в Университете Иннополис",
   "about_learn": "Я занимаюсь программированием и информационной безопастностью",
@@ -50,6 +50,6 @@
   "photo_drivehack_text": "DriveHack, КиберШкола",
   "photo_itgen_text": "Поколение IT, КС54",
   "photo_ideathon_text": "Идеатон, ВШЭ",
-  "contact_title": "Свяжитесь со мной",
-  "contact_short_description": "Вы можете найти меня в любой из этих социальных сетей",
+  "contact_title": "Контакты",
+  "contact_short_description": "Вы можете найти меня в любой из этих социальных сетей"
 }
