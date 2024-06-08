@@ -7,4 +7,4 @@ services:
     ports:
       - 3248:80
     volumes:
-      - ./src:/usr/share/nginx/html:ro
+      - .:/usr/share/nginx/html:ro
