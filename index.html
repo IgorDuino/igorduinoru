@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Личный сайт-портфолио Игоря Кузьменкова. Backend программист" />
+    <meta name="description" content="Личный сайт-портфолио Игоря Кузьменкова. Backend программист">
     <meta name="keywords"
-        content="Игорь Кузьменков, Igor Kuzmenkov, кузьменков, igorduino, web разработчик, фрилансер, backend developer, kuzmenkov, игорьдуино, Кузьменков" />
+        content="Игорь Кузьменков, Igor Kuzmenkov, кузьменков, igorduino, web разработчик, фрилансер, backend developer, kuzmenkov, игорьдуино, Кузьменков">
 
-    <meta name="yandex-verification" content="640cf5ac2e0bc1a6" />
+    <meta name="yandex-verification" content="640cf5ac2e0bc1a6">
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
+    <script>
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
             m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
@@ -26,9 +26,6 @@
             accurateTrackBounce: true
         });
     </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/87712417" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
     <!-- /Yandex.Metrika counter -->
 
     <link rel="stylesheet" href="assets/css/index.css">
@@ -62,19 +59,21 @@
         <nav class="mobile">
             <div class="navbar">
                 <div class="container nav-container">
-                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <input class="checkbox" type="checkbox">
                     <div class="hamburger-lines">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
                         <span class="line line3"></span>
                     </div>
                     <div class="menu-items">
-                        <li><a href="/" class="active_nav nav_home">Home</a></li>
-                        <li><a href="/#about" class="nav_about">About</a></li>
-                        <li><a href="/#projects" class="nav_projects">Projects</a></li>
-                        <li><a href="/#achievements" class="nav_achievements">Achievements</a></li>
-                        <li><a href="assets/cv.pdf" class="nav_cv">CV</a></li>
-                        <li><a href="https://t.me/igorduino_ch" class="nav_blog">Blog</a></li>
+                        <ul>
+                            <li><a href="/" class="active_nav nav_home">Home</a></li>
+                            <li><a href="/#about" class="nav_about">About</a></li>
+                            <li><a href="/#projects" class="nav_projects">Projects</a></li>
+                            <li><a href="/#achievements" class="nav_achievements">Achievements</a></li>
+                            <li><a href="assets/cv.pdf" class="nav_cv">CV</a></li>
+                            <li><a href="https://t.me/igorduino_ch" class="nav_blog">Blog</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -87,7 +86,8 @@
             <div class="left">
                 <h2 class="whoami_full_name">Kuzmenkov<br>Igor</h2>
                 <p><i class="fa-solid fa-location-dot"></i><span class="location">Innopolis, Russia</span></p>
-                <p class="whoami_short_about">Hello everyone, I am a pentester from F.A.C.C.T.<br>I love finding vulnerabilities and writing code.</p>
+                <p class="whoami_short_about">Hello everyone, I am a pentester from F.A.C.C.T.<br>I love finding
+                    vulnerabilities and writing code.</p>
                 <hr>
                 <div class="social">
                     <a href="mailto:igor.kuzmenkov.05@mail.ru">
@@ -138,9 +138,9 @@
         </section>
 
         <section id="projects" class="projects">
-            <hgroup>
+            <div class="hgroup">
                 <h2 class="projects_title">My recent projects</h2>
-            </hgroup>
+            </div>
             <div class="projects_container">
                 <a class="webeye project" href="https://github.com/CupSoft/webeye">
                     <h4 class="projects_webeye_title">WebEye</h4>
@@ -169,13 +169,15 @@
         </section>
 
         <section id="achievements" class="achievements">
-            <hgroup>
+            <div class="hgroup">
+                <!-- because According to the HTML5 specification, only heading elements (<h1> to <h6>) are allowed in hgroup in right order -->
                 <h2 class="achievements_title">Achievements</h2>
                 <h3 class="achievements_description">Some of my results of participation in competitions</h3>
-            </hgroup>
+            </div>
             <ul class="achievements_list">
                 <li class="achievement achievement_itmo">
-                    Winner of the ITMO grant competition "ITMO Stars" - 2023 <a href="https://news.itmo.ru/ru/education/students/news/13345/">🔗</a>
+                    Winner of the ITMO grant competition "ITMO Stars" - 2023 <a
+                        href="https://news.itmo.ru/ru/education/students/news/13345/">🔗</a>
                 </li>
                 <li class="achievement achievement_preprof">
                     The absolute winner of the Moscow School Olympiad in the profile "Pre-professional - Information
@@ -227,9 +229,9 @@
         </section>
 
         <section class="photos">
-            <hgroup>
+            <div class="hgroup">
                 <h2 class="photos_title">Some photos</h2>
-            </hgroup>
+            </div>
             <div class="photos_container">
                 <div class="photo innoopen">
                     <p class="photo_innoopen_text">InnoOpen, Innopolis</p>
@@ -294,18 +296,18 @@
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/lang.js"></script>
     <script src="assets/js/about_switcher.js"></script>
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var links = document.querySelectorAll('.menu-items a');
-        var checkbox = document.querySelector('.checkbox');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('.menu-items a');
+            var checkbox = document.querySelector('.checkbox');
 
-        links.forEach(function(link) {
-            link.addEventListener('click', function() {
-                checkbox.checked = false;
+            links.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    checkbox.checked = false;
+                });
             });
         });
-    });
-</script>
+    </script>
+</body>
 
 </html>

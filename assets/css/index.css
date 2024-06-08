@@ -349,7 +349,7 @@ body.dark-theme .toggle_about_item:hover {
   text-align: center;
 }
 
-.projects hgroup h2 {
+.projects .hgroup h2 {
   color: #1f1f1f;
   font-size: 48px;
 
@@ -357,18 +357,18 @@ body.dark-theme .toggle_about_item:hover {
   margin-bottom: 0;
 }
 
-body.dark-theme .projects hgroup h2 {
+body.dark-theme .projects .hgroup h2 {
   color: #e0e0e0;
 }
 
-.projects hgroup h3 {
+.projects .hgroup h3 {
   color: #6b7280;
   width: 760px;
   font-size: 18px;
   font-weight: normal;
 }
 
-body.dark-theme .projects hgroup h3 {
+body.dark-theme .projects .hgroup h3 {
   color: #e0e0e0;
 }
 
@@ -473,7 +473,7 @@ body.dark-theme .projects hgroup h3 {
   text-align: center;
 }
 
-.achievements hgroup h2 {
+.achievements .hgroup h2 {
   color: #1f1f1f;
   font-size: 48px;
 
@@ -481,18 +481,18 @@ body.dark-theme .projects hgroup h3 {
   margin-bottom: 0;
 }
 
-.achievements hgroup h3 {
+.achievements .hgroup h3 {
   color: #6b7280;
   width: 760px;
   font-size: 18px;
   font-weight: normal;
 }
 
-body.dark-theme .achievements hgroup h2 {
+body.dark-theme .achievements .hgroup h2 {
   color: white;
 }
 
-body.dark-theme .achievements hgroup h3 {
+body.dark-theme .achievements .hgroup h3 {
   color: white;
 }
 
@@ -528,7 +528,7 @@ body.dark-theme .achievements_list li {
   text-align: center;
 }
 
-.photos hgroup h2 {
+.photos .hgroup h2 {
   color: #1f1f1f;
   font-size: 48px;
 
@@ -536,7 +536,7 @@ body.dark-theme .achievements_list li {
   margin-bottom: 0;
 }
 
-body.dark-theme .photos hgroup h2 {
+body.dark-theme .photos .hgroup h2 {
   color: white;
 }
 
@@ -674,7 +674,7 @@ body.dark-theme .photos hgroup h2 {
     display: block;
   }
 
-  .achievements hgroup h3 {
+  .achievements .hgroup h3 {
     width: unset;
   }
 
