@@ -118,6 +118,10 @@ header nav {
   color: #0c0d11;
 }
 
+body.dark-theme .social i {
+  color: #f6f5f5;
+}
+
 /* Footer */
 
 footer {
@@ -432,7 +436,7 @@ body.dark-theme .projects hgroup h3 {
 
 .wgbot {
   grid-area: wgbot;
-  background: url('../../assets/img/mesh-417.png')  no-repeat;
+  background: url('../../assets/img/mesh-417.png') no-repeat;
   background-size: cover;
 }
 
