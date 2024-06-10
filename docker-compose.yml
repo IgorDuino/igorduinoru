@@ -4,7 +4,13 @@ services:
   nginx:
     image: nginx
     restart: always
+    container_name: igorduinoru
     ports:
       - 3248:80
     volumes:
       - .:/usr/share/nginx/html:ro
+
+networks:
+  default:
+    external: true
+    name: npm
