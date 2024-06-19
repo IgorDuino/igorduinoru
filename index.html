@@ -29,6 +29,8 @@
     <!-- /Yandex.Metrika counter -->
 
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/comic.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <title id="title">IgorDuino</title>
@@ -109,7 +111,16 @@
                     </a>
                 </div>
             </div>
+
+            <button id="comicButton" onclick="fetchAndDisplayComic()">Show comics</button>
+
+            <div class="comic-container" style="display: None">
+                <h5 id="comic-title">Comic meme</h5>
+                <img id="comic-img" src="placeholder" alt="Here will be a comic">
+                <p id="comic-date"></p>
+            </div>
             <img class="iam" src="assets/img/i.jpg" alt="igor">
+
         </section>
 
         <section id="about" class="about">
@@ -296,6 +307,8 @@
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/lang.js"></script>
     <script src="assets/js/about_switcher.js"></script>
+    <script src="assets/js/comic.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var links = document.querySelectorAll('.menu-items a');
