@@ -1,0 +1,12 @@
+.comic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#comic-img {
+    max-width: 80%;
+    height: auto;
+}
