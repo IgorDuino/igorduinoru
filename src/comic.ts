@@ -1,3 +1,8 @@
+const dayjs = require("dayjs");
+var relativeTime = require("dayjs/plugin/relativeTime");
+
+dayjs.extend(relativeTime);
+
 interface Comic {
     title: string;
     img: string;
@@ -26,43 +31,27 @@ async function fetchComic(id: string): Promise<Comic> {
 }
 
 function updateComicDisplay(comic: Comic): void {
-    const comicTitle = document.getElementById('comic-title');
+    const comicTitle = document.getElementById('comic-title') as HTMLHeadingElement;
     const comicImg = document.getElementById('comic-img') as HTMLImageElement;
     const comicDate = document.getElementById('comic-date') as HTMLParagraphElement;
+    const comicFromNowDate =  document.getElementById('comic-from-now') as HTMLParagraphElement;
     const myPhoto = document.querySelector("body > main > section.whoami > img") as HTMLImageElement;
     const comicContainer = document.querySelector(".comic-container") as HTMLDivElement;
 
-    if (comicTitle) {
-        comicTitle.textContent = comic.title;
-    } else {
-        console.error('Comic title element not found');
-    }
+    comicTitle.textContent = comic.title;
 
-    if (comicImg) {
-        comicImg.src = comic.img;
-        comicImg.alt = comic.alt;
-    } else {
-        console.error('Comic image element not found');
-    }
+    comicImg.src = comic.img;
+    comicImg.alt = comic.alt;
 
-    if (comicDate) {
-        const date = new Date(`${comic.year}-${comic.month}-${comic.day}`);
-        comicDate.textContent = date.toLocaleDateString();
-    } else {
-        console.error('Comic date element not found');
-    }
+    const date = new Date(`${comic.year}-${comic.month}-${comic.day}`);
+    comicDate.textContent = date.toLocaleDateString();
 
-    if (myPhoto) {
-        myPhoto.style.display = "none";
-    } else {
-        console.error('My photo element not found');
-    }
+    const fromNowDate: string = dayjs(date).fromNow();
+    comicFromNowDate.textContent = fromNowDate;
 
-    if (comicContainer) {
-        comicContainer.style.display = "block";
-    } else {
-        console.error('Comic container element not found');
-    }
+    myPhoto.style.display = "none";
+
+    comicContainer.style.display = "block";
 }
 
 async function fetchAndDisplayComic(): Promise<void> {
