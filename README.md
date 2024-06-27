@@ -55,7 +55,7 @@ You can now open your browser and navigate to `http://localhost:8080` to see the
 Or you can use docker & docker compose plugin to run it with
 
 ```sh
-docker compose up -d
+docker compose up -d --build
 ```
 
 And navigate to `http://localhost:3248` to see the website.
