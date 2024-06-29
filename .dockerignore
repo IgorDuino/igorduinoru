@@ -1,0 +1,7 @@
+./.git/
+.env
+README.md
+./.env.example
+./.vscode/
+./.idea/
+./.github/
