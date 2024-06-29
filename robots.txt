@@ -1,5 +1,4 @@
 User-agent: Yandex
-Disallow: /*.pdf
 Disallow: /*.xls
 Disallow: /*.doc
 Disallow: /*.ppt
@@ -11,7 +10,6 @@ Allow: /*/assets/img/*.jpeg
 Allow: /*/assets/img/*.png
 Allow: /*/assets/img/*.gif
 Clean-param: utm_source&utm_medium&utm_term&utm_content&utm_campaign&yclid&gclid&_openstat&from /
-Host: igorduino.ru
 
 User-agent: Googlebot
 Disallow: /*.pdf
