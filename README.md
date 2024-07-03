@@ -1,66 +1,38 @@
-# Personal Website
+# create-svelte
 
-This is the repository for my personal website. The website is built using TypeScript and Webpack, and it's deployed using GitHub Pages.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Getting Started
+## Creating a project
 
-Follow these instructions to set up and run the project on your local machine.
+If you're seeing this, you've probably already done this step. Congrats!
 
-### Prerequisites
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-- Node.js (version 16 or higher)
-- npm (Node package manager, comes with Node.js)
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-### Installation
+## Developing
 
-1. **Clone the repository**:
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-   ```sh
-   git clone https://github.com/IgorDuino/igorduinoru.git
-   cd igorduinoru
-   ```
+```bash
+npm run dev
 
-2. **Install dependencies**:
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-   ```sh
-   npm install
-   ```
+## Building
 
-### Building the Project
+To create a production version of your app:
 
-To build the project, run:
-
-```sh
+```bash
 npm run build
 ```
 
-This will compile the TypeScript files and bundle them into the `dist` directory.
+You can preview the production build with `npm run preview`.
 
-### Running the Project Locally
-
-To serve the project locally, you can use a simple static server like `http-server`. First, install it globally if you haven't already:
-
-```sh
-npm install -g http-server
-```
-
-Then start the server:
-
-```sh
-http-server
-```
-
-You can now open your browser and navigate to `http://localhost:8080` to see the website.
-
-Or you can use docker & docker compose plugin to run it with
-
-```sh
-docker compose up -d --build
-```
-
-And navigate to `http://localhost:3248` to see the website.
-
-
-### Deployment
-
-The project is configured to be deployed to GitHub Pages. The GitHub Actions workflow in this repository will automatically build and deploy the project whenever changes are pushed to the `main` branch.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
