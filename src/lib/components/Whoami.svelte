@@ -69,7 +69,7 @@
     color: #f2f2f2;
   }
 
-  .whoami .iam {
+  .whoami .iam img {
     border-radius: 2%;
     width: 450px;
     height: 450px;
