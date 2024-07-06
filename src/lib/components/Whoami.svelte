@@ -128,7 +128,6 @@
     }
 
     .whoami {
-      margin-top: 20px;
       flex-direction: column;
       align-items: center;
     }

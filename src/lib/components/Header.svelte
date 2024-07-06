@@ -65,42 +65,52 @@
       </div>
     </div>
   </nav>
-  <!-- <p class='switcher unselectable' on:click={toggleLang}>{$lang === 'rus' ? 'eng' : 'rus'}</p> -->
+  <div class="news">
+    <p>Now site is splited into routes, use the navigation bar to navigate</p>
+  </div>
 </header>
 
 <style>
   @import url('/global.css');
 
-  nav.mobile {
-    display: none;
-  }
   header {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin-top: 50px;
   }
 
-  header nav.desktop {
-    width: 100%;
+  nav {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
 
-  header nav a {
+  nav.desktop {
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav.mobile {
+    display: none;
+  }
+
+  nav a {
     font-weight: 500;
     color: #6b7280;
   }
 
-  body.dark-theme header nav a {
+  body.dark-theme nav a {
     color: #f2f2f2;
   }
 
-  header nav a {
+  nav a {
     position: relative;
   }
 
-  header nav a:hover::after {
+  nav a:hover::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -110,13 +120,15 @@
     left: 0;
   }
 
-  header nav {
-    width: 60%;
+  .news {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    margin-top: 20px;
+    color: #6b7280;
   }
+
   @media (max-width: 1200px) {
     header {
       margin-top: 20px;
