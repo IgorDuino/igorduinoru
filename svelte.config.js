@@ -4,7 +4,7 @@ export default {
 	kit: {
 		adapter: adapter({
 			strict: false,
-			fallback: null
+			fallback: "index.html"
 		}),
 		paths: {
 			base: ''
