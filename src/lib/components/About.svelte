@@ -1,21 +1,7 @@
 <section id="about" class="about">
   <h2 class="about_title">About</h2>
-  <div class="about_div university">
-    <p class="about_university">I study at Innopolis University</p>
-  </div>
-  <div class="about_div learn">
-    <p class="about_learn">I am engaged in programming and InfoSec</p>
-  </div>
   <div class="about_div foss">
     <p class="about_foss">I use, love and contribute to OpenSource 💕</p>
-  </div>
-  <div class="toggle_about">
-    <div
-      id="toggle_item_first"
-      class="toggle_about_item active university"
-    ></div>
-    <div id="toggle_item_second" class="toggle_about_item university"></div>
-    <div id="toggle_item_third" class="toggle_about_item university"></div>
   </div>
 </section>
 

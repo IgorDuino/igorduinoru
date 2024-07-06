@@ -29,10 +29,12 @@
   <!-- <p class='switcher unselectable' on:click={themeSwitcher}>dark</p> -->
   <nav class="desktop">
     <a href="/" class="active_nav nav_home">Home</a>
-    <a href="#about" class="nav_about">About</a>
-    <a href="#projects" class="nav_projects">Projects</a>
-    <a href="#achievements" class="nav_achievements">Achievements</a>
+    <a href="/about" class="nav_about">About</a>
+    <a href="/comic" class="nav_about">Comic</a>
+    <a href="/projects" class="nav_projects">Projects</a>
+    <a href="/achievements" class="nav_achievements">Achievements</a>
     <a href="pdf/cv.pdf" class="nav_cv">CV</a>
+    <a href="/photos" class="nav_photos">Photos</a>
     <a href="https://t.me/igorduino_ch" class="nav_blog">Blog</a>
   </nav>
   <nav class="mobile">
@@ -47,12 +49,14 @@
         <div class="menu-items">
           <ul>
             <li><a href="/" class="active_nav nav_home">Home</a></li>
-            <li><a href="/#about" class="nav_about">About</a></li>
-            <li><a href="/#projects" class="nav_projects">Projects</a></li>
+            <li><a href="/about" class="nav_about">About</a></li>
+            <a href="/comic" class="nav_about">Comic</a>
+            <li><a href="/projects" class="nav_projects">Projects</a></li>
             <li>
-              <a href="/#achievements" class="nav_achievements">Achievements</a>
+              <a href="/achievements" class="nav_achievements">Achievements</a>
             </li>
             <li><a href="pdf/cv.pdf" class="nav_cv">CV</a></li>
+            <li><a href="/photos" class="nav_photos">CV</a></li>
             <li>
               <a href="https://t.me/igorduino_ch" class="nav_blog">Blog</a>
             </li>

@@ -46,7 +46,7 @@
     color: #0c0d11;
   }
 
-  body.dark-theme .social i {
+  body.dark-theme .social a {
     color: #f6f5f5;
   }
 

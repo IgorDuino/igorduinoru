@@ -5,7 +5,13 @@
 
   dayjs.extend(relativeTime);
 
+  /**
+   * @type {{ title: any; img: any; alt: any; year: any; month: any; day: any; } | null}
+   */
   let comic = null;
+  /**
+   * @type {null}
+   */
   let error = null;
 
   async function fetchComicId(email) {
@@ -42,11 +48,17 @@
     }
   }
 
+  /**
+   * @param {string | number | Date} dateString
+   */
   function formattedDate(dateString) {
     const date = new Date(dateString);
     return date.toLocaleDateString();
   }
 
+  /**
+   * @param {string | number | Date} dateString
+   */
   function fromNowDate(dateString) {
     const date = new Date(dateString);
     return dayjs(date).fromNow();
@@ -63,28 +75,54 @@
   }
 </script>
 
-<button id="comicButton" on:click={toggleComicDisplay}>Show comics</button>
-{#if showComic && comic}
-  <div class="comic-container">
-    <h5 id="comic-title">{comic.title}</h5>
-    <img id="comic-img" src={comic.img} alt={comic.alt} />
-    <p id="comic-date">
-      {formattedDate(`${comic.year}-${comic.month}-${comic.day}`)}
-    </p>
-    <p id="comic-from-now">
-      {fromNowDate(`${comic.year}-${comic.month}-${comic.day}`)}
-    </p>
-  </div>
-{:else if error}
-  <p class="error">{error}</p>
-{/if}
-<img class="iam" src="/img/i.jpg" alt="igor" />
+<div class="wrapper">
+  <button id="comicButton" on:click={toggleComicDisplay}>
+    {#if showComic}
+      Hide comic
+    {:else}
+      Show comics
+    {/if}
+  </button>
+  {#if showComic && comic}
+    <div class="comic-container">
+      <h5 id="comic-title">{comic.title}</h5>
+      <img id="comic-img" src={comic.img} alt={comic.alt} />
+      <p id="comic-date">
+        {formattedDate(`${comic.year}-${comic.month}-${comic.day}`)}
+      </p>
+      <p id="comic-from-now">
+        {fromNowDate(`${comic.year}-${comic.month}-${comic.day}`)}
+      </p>
+    </div>
+  {:else if error}
+    <p class="error">{error}</p>
+  {/if}
+</div>
 
 <style>
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   img {
     border-radius: 2%;
     width: 450px;
     height: 450px;
+  }
+
+  button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
   .comic-container {
