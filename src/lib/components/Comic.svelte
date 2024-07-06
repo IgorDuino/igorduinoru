@@ -6,14 +6,19 @@
   dayjs.extend(relativeTime);
 
   /**
-   * @type {{ title: any; img: any; alt: any; year: any; month: any; day: any; } | null}
+   * @type {{ title: string; img: string; alt: string; year: number; month: number; day: number; } | null}
    */
   let comic = null;
   /**
-   * @type {null}
+   * @type {string | null}
    */
   let error = null;
 
+  /**
+   * Fetch the comic ID based on the provided email.
+   * @param {string} email
+   * @returns {Promise<string>}
+   */
   async function fetchComicId(email) {
     const params = new URLSearchParams({ email });
     const response = await fetch(
@@ -25,6 +30,11 @@
     return response.text();
   }
 
+  /**
+   * Fetch the comic based on the provided ID.
+   * @param {string} id
+   * @returns {Promise<{ title: string; img: string; alt: string; year: number; month: number; day: number; }>}
+   */
   async function fetchComic(id) {
     const params = new URLSearchParams({ id });
     const response = await fetch(
@@ -36,6 +46,9 @@
     return response.json();
   }
 
+  /**
+   * Fetch and display the comic based on the email.
+   */
   async function fetchAndDisplayComic() {
     const email = 'i.kuzmenkov@innopolis.university';
     try {
@@ -43,13 +56,15 @@
       comic = await fetchComic(comicId);
       showComic = true;
     } catch (err) {
-      error = err.message;
+      error = /** @type {Error} */ (err).message;
       console.error('Error fetching and displaying comic:', err);
     }
   }
 
   /**
+   * Format the date to a readable string.
    * @param {string | number | Date} dateString
+   * @returns {string}
    */
   function formattedDate(dateString) {
     const date = new Date(dateString);
@@ -57,7 +72,9 @@
   }
 
   /**
+   * Format the date to a relative time string.
    * @param {string | number | Date} dateString
+   * @returns {string}
    */
   function fromNowDate(dateString) {
     const date = new Date(dateString);
@@ -66,6 +83,9 @@
 
   let showComic = false;
 
+  /**
+   * Toggle the display of the comic.
+   */
   function toggleComicDisplay() {
     if (!showComic) {
       fetchAndDisplayComic();
