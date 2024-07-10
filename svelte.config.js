@@ -1,13 +1,11 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
+import preprocess from 'svelte-preprocess';
 
-export default {
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
 	kit: {
-		adapter: adapter({
-			strict: false,
-			fallback: "index.html"
-		}),
-		paths: {
-			base: ''
-		}
-	}
+		adapter: adapter(),
+	},
+	preprocess: preprocess()
 };
+export default config;

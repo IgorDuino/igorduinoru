@@ -1,65 +1,15 @@
+<script context="module">
+  export const ssr = true;
+</script>
+
 <script>
-  import { onMount } from 'svelte';
+  export let comic = null;
+  export let error = null;
+
   import dayjs from 'dayjs';
   import relativeTime from 'dayjs/plugin/relativeTime';
 
   dayjs.extend(relativeTime);
-
-  /**
-   * @type {{ title: string; img: string; alt: string; year: number; month: number; day: number; } | null}
-   */
-  let comic = null;
-  /**
-   * @type {string | null}
-   */
-  let error = null;
-
-  /**
-   * Fetch the comic ID based on the provided email.
-   * @param {string} email
-   * @returns {Promise<string>}
-   */
-  async function fetchComicId(email) {
-    const params = new URLSearchParams({ email });
-    const response = await fetch(
-      `https://fwd.innopolis.university/api/hw2?${params}`
-    );
-    if (!response.ok) {
-      throw new Error('Failed to fetch comic ID');
-    }
-    return response.text();
-  }
-
-  /**
-   * Fetch the comic based on the provided ID.
-   * @param {string} id
-   * @returns {Promise<{ title: string; img: string; alt: string; year: number; month: number; day: number; }>}
-   */
-  async function fetchComic(id) {
-    const params = new URLSearchParams({ id });
-    const response = await fetch(
-      `https://fwd.innopolis.university/api/comic?${params}`
-    );
-    if (!response.ok) {
-      throw new Error('Failed to fetch comic');
-    }
-    return response.json();
-  }
-
-  /**
-   * Fetch and display the comic based on the email.
-   */
-  async function fetchAndDisplayComic() {
-    const email = 'i.kuzmenkov@innopolis.university';
-    try {
-      const comicId = await fetchComicId(email);
-      comic = await fetchComic(comicId);
-      showComic = true;
-    } catch (err) {
-      error = /** @type {Error} */ (err).message;
-      console.error('Error fetching and displaying comic:', err);
-    }
-  }
 
   /**
    * Format the date to a readable string.
@@ -80,30 +30,10 @@
     const date = new Date(dateString);
     return dayjs(date).fromNow();
   }
-
-  let showComic = false;
-
-  /**
-   * Toggle the display of the comic.
-   */
-  function toggleComicDisplay() {
-    if (!showComic) {
-      fetchAndDisplayComic();
-    } else {
-      showComic = false;
-    }
-  }
 </script>
 
 <div class="wrapper">
-  <button id="comicButton" on:click={toggleComicDisplay}>
-    {#if showComic}
-      Hide comic
-    {:else}
-      Show comics
-    {/if}
-  </button>
-  {#if showComic && comic}
+  {#if comic}
     <div class="comic-container">
       <h5 id="comic-title">{comic.title}</h5>
       <img id="comic-img" src={comic.img} alt={comic.alt} />
@@ -134,15 +64,6 @@
     border-radius: 2%;
     width: 450px;
     height: 450px;
-  }
-
-  button {
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #f3f4f6;
-    border: 1px solid #d1d5db;
-    border-radius: 5px;
-    cursor: pointer;
   }
 
   .comic-container {
