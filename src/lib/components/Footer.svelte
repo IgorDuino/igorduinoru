@@ -20,11 +20,6 @@
     margin-bottom: 50px;
   }
 
-  footer.mail_link {
-    text-decoration: underline;
-    font-size: 18px;
-  }
-
   footer h2 {
     color: #333333;
     font-size: 48px;
@@ -41,14 +36,10 @@
   }
 
   body.dark-theme footer h3,
-  body.dark-theme footer h2,
-  body.dark-theme footer a {
+  body.dark-theme footer h2 {
     color: white;
   }
 
-  body.dark-theme footer a {
-    text-decoration: underline;
-  }
   @media (max-width: 700px) {
     footer {
       margin-top: 50px;

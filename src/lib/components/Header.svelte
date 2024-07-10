@@ -283,14 +283,6 @@
       font-weight: 500;
     }
 
-    .logo {
-      position: absolute;
-      top: 5px;
-      right: 15px;
-      font-size: 1.2rem;
-      color: #0e2431;
-    }
-
     .nav-container input[type='checkbox']:checked ~ .menu-items {
       transform: translateX(0);
     }
@@ -305,10 +297,6 @@
 
     .nav-container input[type='checkbox']:checked ~ .hamburger-lines .line3 {
       transform: rotate(-45deg);
-    }
-
-    .nav-container input[type='checkbox']:checked ~ .logo {
-      display: none;
     }
   }
 </style>

@@ -73,17 +73,6 @@
     color: #e0e0e0;
   }
 
-  .projects .hgroup h3 {
-    color: #6b7280;
-    width: 760px;
-    font-size: 18px;
-    font-weight: normal;
-  }
-
-  body.dark-theme .projects .hgroup h3 {
-    color: #e0e0e0;
-  }
-
   .projects_container {
     width: 1000px;
 

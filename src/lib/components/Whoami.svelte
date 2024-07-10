@@ -88,20 +88,6 @@
     height: 450px;
   }
 
-  .fa-location-dot {
-    color: #1f1f1f;
-    margin-right: 10px;
-    margin-top: 10px;
-  }
-
-  body.dark-theme .fa-location-dot {
-    color: #f2f2f2;
-  }
-
-  .iam.mobile {
-    display: none;
-  }
-
   @media (max-width: 1200px) {
     .whoami hr {
       width: 100%;
