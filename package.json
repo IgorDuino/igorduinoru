@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
+    "pre-commit": "lint-staged",
     "build": "vite build",
     "preview": "vite preview",
     "lint:svelte": "svelte-check",
